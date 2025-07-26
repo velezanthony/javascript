@@ -1,0 +1,11 @@
+export { renderCard } from "./render-card";
+export { createDeck } from "./create-deck";
+export { shuffleDeck } from "./shuffle-deck";
+export { requestCard } from "./request-card";
+export { cardValue } from "./card-value";
+export { drawCardForPlayer } from "./drawCardForPlayer";
+export { endPlayerTurn } from "./endPlayerTurn";
+export { computerGame } from "./computer-game";
+export { getWinner } from "./get-winner";
+export { resetGame } from "./reset-game";
+export { openModal } from "./modal";

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manipulación del DOM</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Elementos base -->
+   <div id="primer-div">Soy primer div </div>
+  <div id="miId" tabindex="0">Elemento con ID</div>
+  <div class="miClase">Elemento con clase</div>
+  <div name="nombre">Elemento con atributo name</div>
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+
+  <!-- Template para clonación -->
+  <template id="mi-template">
+    <div class="carta" style="border:1px solid #ccc; padding: 1rem; margin:0.5rem 0;">
+      <h3>Título desde template</h3>
+      <button class="boton-dinamico">Botón dinámico</button>
+    </div>
+  </template>
+
+  <!-- Contenedor final -->
+  <div id="contenedor" class="caja"></div>
+
+<script src="./assets/js/teoria.js"></script>
+</body>
+</html>

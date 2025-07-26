@@ -1,0 +1,154 @@
+/* RESET GENERAL */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* FUENTES */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at top, #0b3d26 0%, #051f13 100%);
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ENCABEZADO */
+.title {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(90deg, #000000, #222);
+    padding: 30px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.7);
+    letter-spacing: 3px;
+    color: #f8f8f8;
+    border-bottom: 4px solid #1db954;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* BOTONES */
+.buttons {
+    margin: 40px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons button {
+    padding: 16px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    min-width: 150px;
+}
+
+#btnNewGame {
+    background-color: #e63946;
+    color: white;
+}
+
+#btnRequest {
+    background-color: #1d3557;
+    color: white;
+}
+
+#btnStop {
+    background-color: #f1c40f;
+    color: #222;
+}
+
+button:hover:enabled {
+    transform: translateY(-2px);
+    filter: brightness(1.15);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* area DE JUEGO */
+.player-area,
+.computer-area {
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.player-area h2,
+.computer-area h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #f8f8f8;
+}
+
+.scoore {
+    font-size: 1rem;
+    color: #1db954;
+}
+
+/* CARTAS */
+.cards-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 200px;
+}
+
+.cards-area > img {
+    width: 110px;
+    height: 190px;
+    border-radius: 10px;
+    margin-right: -30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cards-area > img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons button {
+        width: 90%;
+    }
+
+    .cards-area > img {
+        width: 90px;
+        height: 170px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}

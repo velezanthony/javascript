@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/modal.css">
+</head>
+<body>
+  <header class="title" role="banner">
+    Blackjack
+  </header>
+
+  <main class="container">
+    <section class="buttons">
+      <button id="btnNewGame">Nuevo Juego</button>
+      <button id="btnRequest">Pedir Carta</button>
+      <button id="btnStop">Detener</button>
+    </section>
+
+    <section class="player-area">
+      <h2>Player <span>1</span> - <small class="score">0</small></h2>
+      <div id="player-cards" class="cards-area"></div>
+    </section>
+
+    <section class="computer-area">
+      <h2>Computer - <small class="score">0</small></h2>
+      <div id="computer-cards" class="cards-area"></div>
+    </section>
+  </main>
+
+  <div id="winner-modal" class="modal hidden">
+    <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2 id="winner-message">Player Wins!</h2>
+        <button id="modal-ok">OK</button>
+    </div>
+    </div>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+      myModule.NewGame();
+    </script>
+  
+</body>
+</html>
